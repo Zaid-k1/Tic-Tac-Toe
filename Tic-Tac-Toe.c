@@ -19,6 +19,8 @@ void def(){
 }
 
 int main(){
+	printf("\tWELCOME TO TIC-TAC-TOE\n");
+	printf("-------------------------------------------\n");
 	def();
 	printf("\n");
 	char player1, player2;
