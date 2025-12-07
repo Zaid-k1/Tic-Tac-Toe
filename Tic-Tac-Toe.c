@@ -44,31 +44,67 @@ int main(){
 	scanf(" %c", &player1);
 		switch(player1){
 			case 'a':
-				a='X';
+				if(a==' ') a='X';
+				else {
+					printf("This square is full");
+					r=1;
+				}
 				break;
 			case 'b':
-				b='X';
+				if(b==' ') b='X';
+				else {
+					printf("This square is full");
+					r=1;
+				}
 				break;
 			case 'c':
-				c='X';
+				if(c==' ') c='X';
+				else {
+					printf("This square is full");
+					r=1;
+				}
 				break;
 			case 'd':
-				d='X';
+				if(d==' ') d='X';
+				else {
+					printf("This square is full");
+					r=1;
+				}
 				break;
 			case 'e':
-				e='X';
+				if(e==' ') e='X';
+				else {
+					printf("This square is full");
+					r=1;
+				}
 				break;
 			case 'f':
-				f='X';
+				if(f==' ') f='X';
+				else {
+					printf("This square is full");
+					r=1;
+				}
 				break;
 			case 'g':
-				g='X';
+				if(g==' ') g='X';
+				else {
+					printf("This square is full");
+					r=1;
+				}
 				break;
 			case 'h':
-				h='X';
+				if(h==' ') h='X';
+				else {
+					printf("This square is full");
+					r=1;
+				}
 				break;
 			case 'i':
-				i='X';
+				if(i==' ') i='X';
+				else {
+					printf("This square is full");
+					r=1;
+				}
 				break;
 			default:
 				printf("invalid choice.");
