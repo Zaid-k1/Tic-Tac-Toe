@@ -24,8 +24,9 @@ int main(){
 	char player1, player2;
 	char a,b,c,d,e,f,g,h,i;
 	int u=0;
-	while(u!=1){
 	
+	while(u!=1){
+		
 	if(a!='X' && a!='O') a=' ';
 	if(g!='X' && g!='O') g=' ';
 	if(b!='X' && b!='O') b=' ';
@@ -38,10 +39,10 @@ int main(){
 		
 	int r;
 	do{
-	r=0;
-	printf("\n");
-	printf("Player 1(X): select a box\n");
-	scanf(" %c", &player1);
+		r=0;
+		printf("\n");
+		printf("Player 1(X): select a box\n");
+		scanf(" %c", &player1);
 		switch(player1){
 			case 'a':
 				if(a==' ') a='X';
@@ -161,36 +162,73 @@ int main(){
 	
 	if(u!=1){
 	do{
-	r=0;
-	printf("Player 2(O): select a box\n");
-	scanf(" %c", &player2);
+		r=0;
+		printf("\n");
+		printf("Player 2(O): select a box\n");
+		scanf(" %c", &player2);
 		switch(player2){
 			case 'a':
-				a='O';
+				if(a==' ') a='O';
+				else {
+					printf("This square is full");
+					r=1;
+				}
 				break;
 			case 'b':
-				b='O';
+				if(b==' ') b='O';
+				else {
+					printf("This square is full");
+					r=1;
+				}
 				break;
 			case 'c':
-				c='O';
+				if(c==' ') c='O';
+				else {
+					printf("This square is full");
+					r=1;
+				}
 				break;
 			case 'd':
-				d='O';
+				if(d==' ') d='O';
+				else {
+					printf("This square is full");
+					r=1;
+				}
 				break;
 			case 'e':
-				e='O';
+				if(e==' ') e='O';
+				else {
+					printf("This square is full");
+					r=1;
+				}
 				break;
 			case 'f':
-				f='O';
+				if(f==' ') f='O';
+				else {
+					printf("This square is full");
+					r=1;
+				}
 				break;
 			case 'g':
-				g='O';
+				if(g==' ') g='O';
+				else {
+					printf("This square is full");
+					r=1;
+				}
 				break;
 			case 'h':
-				h='O';
+				if(h==' ') h='O';
+				else {
+					printf("This square is full");
+					r=1;
+				}
 				break;
 			case 'i':
-				i='O';
+				if(i==' ') i='O';
+				else {
+					printf("This square is full");
+					r=1;
+				}
 				break;
 			default:
 				printf("invalid choice.");
@@ -199,6 +237,7 @@ int main(){
 				break;
 		}
 	}while(r==1);
+	
 	def();
 	printf("\n");
 	printf("\n");
@@ -241,8 +280,7 @@ int main(){
 		printf("Player2 Won!");
 		u=1;
 	}
-	}
-	
+	}	
 }
 	return 0;
 }
