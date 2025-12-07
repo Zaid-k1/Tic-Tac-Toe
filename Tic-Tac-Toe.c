@@ -1,5 +1,5 @@
 #include<stdio.h>
-#include<stdlib.h>
+
 void case1(char a,char b,char c,char d,char e,char f,char g,char h,char i){
 	printf("\t %c | %c | %c \n",a,b,c);
 	printf("\t___|___|___\n");
