@@ -1,6 +1,6 @@
 #include<stdio.h>
 
-void case1(char a,char b,char c,char d,char e,char f,char g,char h,char i){
+void printBoard(char a,char b,char c,char d,char e,char f,char g,char h,char i){
 	printf("\t %c | %c | %c \n",a,b,c);
 	printf("\t___|___|___\n");
 	printf("\t %c | %c | %c \n",d,e,f);
@@ -21,6 +21,7 @@ void def(){
 int main(){
 	printf("\tWELCOME TO TIC-TAC-TOE\n");
 	printf("-------------------------------------------\n");
+	printf("\n");
 	def();
 	printf("\n");
 	char player1, player2;
@@ -117,7 +118,7 @@ int main(){
 		}
 	}while(r==1);
 	
-	case1(a,b,c,d,e,f,g,h,i);
+	printBoard(a,b,c,d,e,f,g,h,i);
 	printf("\n");
 	
 	if(a=='X'&&b=='X'&&c=='X'){
@@ -156,13 +157,14 @@ int main(){
 	printf("Player1 Won!");
 	u=1;
 	}
+	if (u==1) return 0;
 	
 	if(a!=' '&&b!=' '&&c!=' '&&d!=' '&&e!=' '&&f!=' '&&g!=' '&&h!=' '&&i!=' '){
 		printf("DRAW!");
 		u=1;
 	}      
+	if (u==1) return 0;
 	
-	if(u!=1){
 	do{
 		r=0;
 		printf("\n");
@@ -243,7 +245,7 @@ int main(){
 	def();
 	printf("\n");
 	printf("\n");
-	case1(a,b,c,d,e,f,g,h,i);
+	printBoard(a,b,c,d,e,f,g,h,i);
 	printf("\n");
 	
 	if(a=='O'&&b=='O'&&c=='O'){
@@ -282,7 +284,7 @@ int main(){
 		printf("Player2 Won!");
 		u=1;
 	}
-	}	
+		
 }
 	return 0;
 }
